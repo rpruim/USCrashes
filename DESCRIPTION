@@ -7,10 +7,12 @@ Authors@R: c(
     )
 Description: Data on US automobile crashes from FARS 
     (<https://www.nhtsa.gov/research-data/fatality-analysis-reporting-system-fars>).
+Suggests:
+    ggformula
 License: MIT + file LICENSE
-Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 URL: https://github.com/rpruim/USCrashes
 BugReports: https://github.com/rpruim/USCrashes/issues
 RoxygenNote: 6.1.0
+Encoding: UTF-8
