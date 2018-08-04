@@ -1,11 +1,16 @@
 Package: USCrashes
 Type: Package
-Title: What the Package Does (Title Case)
-Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Title: Data on US Automobile Crashes
+Version: 0.0.0.9000
+Authors@R: c(
+    person(given = "Randall",  family = "Pruim", email = "rpruim@calvin.edu", role = c("aut", "cre"))
+    )
+Description: Data on US automobile crashes from FARS 
+    (<https://www.nhtsa.gov/research-data/fatality-analysis-reporting-system-fars>).
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
+Roxygen: list(markdown = TRUE)
+URL: https://github.com/rpruim/USCrashes
+BugReports: https://github.com/rpruim/USCrashes/issues
+RoxygenNote: 6.1.0
