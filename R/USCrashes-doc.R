@@ -1,4 +1,3 @@
-
 #' US Automobile Crashes
 #'
 #' US Automobile Crashes from FARS
@@ -14,8 +13,11 @@
 #' * `deaths` Number of deaths in crashes.
 #'
 #' @examples
-#' library(ggformula)
-#' gf_line(deaths ~ date, data = USCrashes, color = ~ dayofweek)
-#' gf_violinh(dayofweek ~ deaths, data = USCrashes)
+#' if (require(ggformula)) {
+#'   gf_smooth(deaths ~ date, data = USCrashes, color = ~ wday, size = 0.5) %>%
+#'     gf_refine(scale_color_brewer(type = "seq")) %>%
+#'     gf_theme(theme_bw())
+#'   gf_violinh(wday ~ deaths, data = USCrashes)
+#' }
 
 "USCrashes"
